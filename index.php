@@ -1,20 +1,14 @@
 <?php  
-$con = mysqli_connect("localhost", "root", "", "social"); //Connection variable
+require 'config/config.php';
 
-if(mysqli_connect_errno()) 
-{
-	echo "Failed to connect: " . mysqli_connect_errno();
-}
-
-$query = mysqli_query($con, "INSERT INTO test VALUES ('2', 'Optimus Prime')");
 
 ?>
 
 <html>
 <head>
-	<title>Welcome to BUcoder</title>
+	<title>Welcome to BU</title>
 </head>
 <body>
-	Hello NAMAN!!!
+	NAMAN WELCOME TO BUCoder
 </body>
 </html>
