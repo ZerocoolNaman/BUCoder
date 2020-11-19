@@ -120,9 +120,7 @@ if(isset($_POST['register_button'])){
 
 		$query = mysqli_query($con, "INSERT INTO  users (first_name,last_name,username,email,password,signup_date,profile_pic,num_posts,num_likes,user_closed,friend_array) VALUES ('$fname', '$lname', '$username', '$em', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
 
-
-
-		array_push($error_array, "<span style='color: #14C800;'>You're all set! Goahead and login!</span><br>");
+		array_push($error_array, "<span style='color: #14C800;'>You're all set! Go ahead and login!</span><br>");
 
 		//Clear session variables 
 		$_SESSION['reg_fname'] = "";
